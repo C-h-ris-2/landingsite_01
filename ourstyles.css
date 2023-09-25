@@ -1,15 +1,24 @@
 body{
-    height: 100%;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://images.pexels.com/photos/2447022/pexels-photo-2447022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-position: relative;
 }
-.hero-image{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),url("assets/banner_comp.png"));
+/* .background-image{
+    background-image: url("https://imgs.search.brave.com/OyaaspnWYD2_AtvYplpvMVN8SrjoVpRF1FLC-1ZhOPI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jb25jZXJ0LWNy/b3dkLXdpdGgtaGFu/ZHMtcmFpc2VkLW11/c2ljLWZlc3RpdmFs/LWNsb3NlLXVwXzc5/NTQyMi02NjYwLmpw/Zz9zaXplPTYyNiZl/eHQ9anBn");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+} */
+
+
+.main-heading{
+    text-align: center;
+    font-size: 50px;
 }
 .hero-text{
     text-align: center;
@@ -17,7 +26,6 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: white;
 }
 .hero-text button{
     border: none;
@@ -25,7 +33,6 @@ body{
     display: inline-block;
     padding: 10px 25px;
     color: black;
-    background-color:#ddd;
     text-align:center;
     cursor: pointer;
 }
