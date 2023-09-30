@@ -3,6 +3,9 @@ body{
     background-color:black;
 }
 
+div {
+    background-color:#565758;
+}
 
 .main-heading{
     text-align: center;
