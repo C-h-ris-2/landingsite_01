@@ -7,21 +7,30 @@
         <link rel="stylesheet" href="ourstyles.css"/>
     </head>
     <body>
-<<<<<<< HEAD
-        <div class="topnav">
-            <a class="active">Home</a>
-            <a>News</a>
-            <a>contact</a>
-            <a>about</a>
-        </div>
-            <div class="hero-text">
-                <h1 style="font-size:50px">
-                    RevMixer
-                </h1>
-                <p>The new way to review your music.</p>
-                <button>Learn More</button>
+        <!-- Navigation bar! -->
+        <nav class="top-nav">
+            <div class="curr-pic">
+                <a href="#">
+                    <!-- Logo... may be replaced by words if necessary -->
+                    <img class="primary-icon" src="./assets/RevMixer_logo_t.png">
+                </a>
             </div>
-=======
+            <ul class="nav-list" id="navigList">
+                <!-- List of items within meny -->
+                <li class="list-item"><a href="#">About Us</a></li>
+                <li class="list-item"><a href="pricing.html">Pricing</a></li>
+                <li class="list-item"><a href="faq.html">FAQ</a></li>
+                <li class="list-item"><a href="futureplans.html">Future Plan</a></li>
+            </ul>
+            <div class="menu" id="toggle-button">
+                <!-- For mobile version... -->
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+        <!-- hero banner (picture start. Need to put text and pic in flexbox!) -->
         <div class="box-model" id="box-model">
             <h1 class="main-heading">
                 RevMixer
@@ -30,6 +39,14 @@
             <button class="button1">Learn More</button>
         </div>
         <h2 class="main-heading">A new way to rate ya music</h2>
->>>>>>> 225999a4628b03d1b218672fe382dd5042095c05
     </body>
+    <script>
+        //Javascript code: allows us to expand/close the meny based on click (or 'toggle')
+        const toggleButton = document.getElementById('toggle-button');
+        const navigationList = document.getElementById('navigList');
+        //Event listener activates upon click (just like Unity!)
+        toggleButton.addEventListener('click', ()=>{
+            navigationList.classList.toggle('active');
+        })
+    </script>
 </html>
