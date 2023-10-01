@@ -1,10 +1,98 @@
+/* default values */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* navigation bar - general */
+.top-nav{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* list of items in navigation bar */
+.nav-list{
+    list-style-type: none;
+}
+/* individual navigation items */
+.nav-list .list-item{
+    display: inline-block;
+    padding: 20px 10px
+}
+
+/* upon activation */
+.top-nav a{
+    color: black;
+    text-decoration: none;
+}
+
+/* upon hover */
+.top-nav a:hover{
+    color: darkblue;
+}
+
+/* mobile display */
+.menu{
+    display: none;
+}
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 4px;
+}
+
+/* depending on mobile/desktop. Activate mobile mode! */
+@media all and (max-width: 480px) {
+    .top-nav{
+        flex-direction: column;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top : 15px;
+    }
+    .nav-list{
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+    .nav-list .list-item{
+        display: block;
+        border-top: 1px solid black
+    }
+    .primary-icon{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .active{
+        display: block;
+    }
+}
+
+/* logo */
+.primary-icon{
+    height: 40px;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color:black;
 }
+/* curr logo */
+.curr-pic {
+    background-color:white;
+}
 
 div {
-    background-color:#565758;
+    background-color: white;
 }
 
 .main-heading{
@@ -22,6 +110,7 @@ div {
     text-align: center;
     position:relative;
 }
+
 .hero-text{
     color: white;
     position: relative;
@@ -45,3 +134,4 @@ div {
     background-color: #555;
     color: grey;
 }
+
