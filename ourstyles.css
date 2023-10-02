@@ -43,14 +43,19 @@ body{
     color: grey;
 }
 .container {
-    padding: 200px;
+    padding: 200px 200px 1px;
     background-color:#390B5B;
     margin: 15px;
 }
 .subheading {
-    font-size:x-large;
+    font-size:30px;
     position:relative;
     bottom: 195px;
     right: 185px;
     color: white;
+}
+.mockup {
+    position: relative;
+    left: 800px;
+    bottom: 195px;
 }
