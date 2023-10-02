@@ -3,16 +3,13 @@ body{
     background-color:black;
 }
 
-div {
-    background-color:#565758;
-}
 
 .main-heading{
     text-align: center;
-    font-size: 70px;
+    font-size: 500%;
     color: white;
 }
-.box-model{
+.start-box-model{
     background-image: url("./assets/banner_comp.png");
     background-repeat: no-repeat;
     background-size:cover;
@@ -44,4 +41,16 @@ div {
 .hero-text button:hover{
     background-color: #555;
     color: grey;
+}
+.container {
+    padding: 200px;
+    background-color:#390B5B;
+    margin: 15px;
+}
+.subheading {
+    font-size:x-large;
+    position:relative;
+    bottom: 195px;
+    right: 185px;
+    color: white;
 }
