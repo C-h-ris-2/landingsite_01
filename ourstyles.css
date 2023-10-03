@@ -7,8 +7,8 @@
 
 /* navigation bar - general */
 .top-nav{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,12 +20,12 @@
 /* individual navigation items */
 .nav-list .list-item{
     display: inline-block;
-    padding: 20px 10px
+    padding: 30px 10px
 }
 
 /* upon activation */
 .top-nav a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .menu-line {
-    width: 20px;
+    width: 40px;
     height: 3px;
     background-color: black;
     margin-bottom: 4px;
@@ -62,13 +62,13 @@ body{
 }
 /* curr logo */
 .curr-pic {
-    background-color:white;
+    background-color:rgb(0, 0, 0);
 }
 
 
 .main-heading{
     text-align: center;
-    font-size: 500%;
+    font-size: 600%;
     color: white;
 }
 .start-box-model{
@@ -116,10 +116,12 @@ body{
 .subheading {
     font: bold;
     text-align: left;
-    font-size:60px;
+    font-size:70px;
     float: left;
     color: white;
-    padding: 10px;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 .aboutcontainer {
     float: left;
@@ -137,9 +139,9 @@ body{
     padding-right: 180px;
 }
 .list-text{
-    padding-top: 60px;
+    padding-top: 10px;
     padding-right: 0;
-    font-size:30px;
+    font-size:25px;
     color:white;
     float: left;
 }
@@ -147,8 +149,9 @@ body{
     font-size: 375%;
     color: white;
     text-align: center;
+    font-weight: bold;
 }
-.reviewcontains {
+.reviewcontains1 {
     border-radius: 10px;
     height: 550px;
     border-width: 2px;
@@ -156,7 +159,31 @@ body{
     margin: 15px;
     margin-top: 80px;
     width: 500px;
-    border-color: white;
+    border-color: rgb(141, 0, 141);
+    float: left;
+    background-color: black;
+}
+.reviewcontains2 {
+    border-radius: 10px;
+    height: 550px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 15px;
+    margin-top: 80px;
+    width: 500px;
+    border-color: rgb(0, 78, 122);
+    float: left;
+    background-color: black;
+}
+.reviewcontains3 {
+    border-radius: 10px;
+    height: 550px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 15px;
+    margin-top: 80px;
+    width: 500px;
+    border-color: rgb(12, 141, 0);
     float: left;
     background-color: black;
 }
@@ -164,6 +191,7 @@ body{
     width: 300px;
     margin: 40px;
     padding-left: 100px;
+
 }
 .reviewtext {
     text-align:center;
@@ -176,6 +204,7 @@ body{
     text-align: center;
     font-size: 35px;
     color: white;
+    font-weight: bold;
 }
 .footer {
     text-align: center;
