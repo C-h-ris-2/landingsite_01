@@ -113,35 +113,7 @@
 }
 
 /* depending on mobile/desktop. Activate mobile mode! */
-@media all and (max-width: 480px) {
-    .top-nav{
-        flex-direction: column;
-    }
-    .menu{
-        display: block;
-        position: absolute;
-        right: 15px;
-        top : 15px;
-    }
-    .nav-list{
-        list-style-type: none;
-        width: 100%;
-        text-align: center;
-        padding-top: 10px;
-        display: none;
-    }
-    .nav-list .list-item{
-        display: block;
-        border-top: 1px solid black
-    }
-    .primary-icon{
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-    .active{
-        display: block;
-    }
-}
+
 
 /* logo */
 .primary-icon{
@@ -150,28 +122,27 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:black;
+    background-color:white;
+    width: 100%;
+    height: auto;
 }
 /* curr logo */
 .curr-pic {
     background-color:white;
 }
 
-div {
-    background-color: white;
-}
 
 .main-heading{
     text-align: center;
-    font-size: 70px;
+    font-size: 500%;
     color: white;
 }
-.box-model{
+.start-box-model{
     background-image: url("./assets/banner_comp.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: relative;
-    padding:200px;
+    padding:300px;
     align-items: center;
     text-align: center;
     position:relative;
@@ -216,4 +187,108 @@ div {
     background-color: #555;
     color: grey;
 }
+.container1 {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color:black;
+    display: flex;
+    padding-left: 10%;
+    align-self: left;
+}
+.subheading {
+    font: bold;
+    text-align: left;
+    font-size:60px;
+    float: left;
+    color: white;
+    padding: 10px;
+}
+.aboutcontainer {
+    float: left;
+    width: 1100px;
+    height: 500px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    background-color:#272727
+}
+.mockup {
+    width: 500px;
+    margin-left: 30px;
+    float: left;
+    padding-right: 180px;
+}
+.list-text{
+    padding-top: 60px;
+    padding-right: 0;
+    font-size:30px;
+    color:white;
+    float: left;
+}
+.thirdheading {
+    font-size: 375%;
+    color: white;
+    text-align: center;
+}
+.reviewcontains {
+    border-radius: 10px;
+    height: 550px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 15px;
+    margin-top: 80px;
+    width: 500px;
+    border-color: white;
+    float: left;
+    background-color: black;
+}
+.pfps {
+    width: 300px;
+    margin: 40px;
+    padding-left: 100px;
+}
+.reviewtext {
+    text-align:center;
+    margin: 40px;
 
+    font-size: 25px;
+    color: white;
+}
+.usersnames{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.footer {
+    text-align: center;
+
+}
+@media all and (max-width: 480px) {
+    .top-nav{
+        flex-direction: column;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top : 15px;
+    }
+    .nav-list{
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+    .nav-list .list-item{
+        display: block;
+        border-top: 1px solid black
+    }
+    .primary-icon{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .active{
+        display: block;
+    }
+}
