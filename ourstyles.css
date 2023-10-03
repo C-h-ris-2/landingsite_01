@@ -47,6 +47,120 @@
 }
 
 /* depending on mobile/desktop. Activate mobile mode! */
+
+
+/* logo */
+.primary-icon{
+    height: 40px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+}
+/* curr logo */
+.curr-pic {
+    background-color:white;
+}
+
+
+.main-heading{
+    text-align: center;
+    font-size: 500%;
+    color: white;
+}
+.start-box-model{
+    background-image: url("./assets/banner_comp.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: relative;
+    padding:300px;
+    align-items: center;
+    text-align: center;
+    position:relative;
+}
+
+.hero-text{
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 30px;
+}
+.button1{
+    color: black;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    text-align:center;
+    cursor: pointer;
+    padding: 10px;
+}
+.hero-text button:hover{
+    background-color: #555;
+    color: grey;
+}
+.container1 {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color:black;
+    display: flex;
+    padding-left: 10%;
+    align-self: left;
+}
+.subheading {
+    text-align: left;
+    font-size:45px;
+    float: left;
+    color: white;
+    padding: 10px;
+}
+.mockup {
+    width: 300px;
+    padding-left: 6%;
+    float: left;
+    padding-right: 180px;
+}
+.list-text{
+    padding-top: 60px;
+    padding-right: 0;
+    font-size:30px;
+    color:white;
+    float: left;
+}
+.thirdheading {
+    font-size: 375%;
+    color: white;
+    text-align: center;
+}
+.reviewcontains {
+    border-width: 2px;
+    border-style: solid;
+    margin: 15px;
+    margin-top: 80px;
+    width: 500px;
+    border-color: white;
+    float: left;
+
+}
+.pfps {
+    width: 200px;
+    margin: 40px;
+    padding-left: 100px;
+}
+.reviewtext {
+    margin: 40px;
+    padding-left: 100px;
+    font-size: 25px;
+    color: white;
+}
+.footer {
+    text-align: center;
+
+}
 @media all and (max-width: 480px) {
     .top-nav{
         flex-direction: column;
@@ -76,62 +190,3 @@
         display: block;
     }
 }
-
-/* logo */
-.primary-icon{
-    height: 40px;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:black;
-}
-/* curr logo */
-.curr-pic {
-    background-color:white;
-}
-
-div {
-    background-color: white;
-}
-
-.main-heading{
-    text-align: center;
-    font-size: 70px;
-    color: white;
-}
-.box-model{
-    background-image: url("./assets/banner_comp.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: relative;
-    padding:200px;
-    align-items: center;
-    text-align: center;
-    position:relative;
-}
-
-.hero-text{
-    color: white;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    font-size: 30px;
-}
-.button1{
-    color: black;
-    border: none;
-    outline: 0;
-    display: inline-block;
-    text-align:center;
-    cursor: pointer;
-    padding: 10px;
-}
-.hero-text button:hover{
-    background-color: #555;
-    color: grey;
-}
-
