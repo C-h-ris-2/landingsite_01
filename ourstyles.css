@@ -46,6 +46,72 @@
     margin-bottom: 4px;
 }
 
+.genpricing{
+    background-color: white;
+}
+
+.price-opt-b{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price-opt-b > div{
+    max-width: 100%;
+    width: 280px;
+    min-width: calc(25%-20px);
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px black;
+    margin: 30px;
+}
+
+.price-opt-b > div >h1{
+    padding-bottom: 20px;
+    color: rgb(194, 4, 194);
+    border-bottom: 1px solid #ddd;
+    font-size: 25px;
+}
+.price-opt-b > div >h2{
+    padding-bottom: 20px;
+    color: rgb(111, 10, 233);
+    border-bottom: 1px solid #ddd;
+    font-size: 25px;
+}
+.price-opt-b > div >h3{
+    padding-bottom: 20px;
+    color: rgb(25, 140, 254);
+    border-bottom: 1px solid #ddd;
+    font-size: 25px;
+}
+.price-opt-b > div >h4{
+    padding-bottom: 20px;
+    color: rgb(0, 121, 51);
+    border-bottom: 1px solid #ddd;
+    font-size: 25px;
+}
+
+.price-opt-b > div >p{
+    padding: 10px;
+    font-size: 10;
+    font-style: italic;
+    text-align: justify;
+    color: #666;
+}
+
+.price-opt-b > div > div > ul{
+    list-style: none;
+    text-align: left;
+}
+
+.price-opt-b > div > div > ul > li{
+    padding: 5px;
+}
+
 /* depending on mobile/desktop. Activate mobile mode! */
 
 
@@ -80,6 +146,22 @@ body{
     align-items: center;
     text-align: center;
     position:relative;
+}
+.img-pricing{
+    background-image: url("./assets/PricingBanner.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: relative;
+    padding:200px;
+    align-items: center;
+    text-align: center;
+    position:relative;
+}
+
+.mh-pricing{
+    text-align: left ;
+    font-size: 80px;
+    color: white;
 }
 
 .hero-text{
