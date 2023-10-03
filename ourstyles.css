@@ -176,6 +176,22 @@ div {
     text-align: center;
     position:relative;
 }
+.img-pricing{
+    background-image: url("./assets/PricingBanner.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: relative;
+    padding:200px;
+    align-items: center;
+    text-align: center;
+    position:relative;
+}
+
+.mh-pricing{
+    text-align: left ;
+    font-size: 80px;
+    color: white;
+}
 
 .hero-text{
     color: white;
