@@ -43,19 +43,32 @@ body{
     color: grey;
 }
 .container {
-    padding: 200px 200px 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color:#390B5B;
     margin: 15px;
+    display: grid;
 }
 .subheading {
-    font-size:30px;
-    position:relative;
-    bottom: 195px;
-    right: 185px;
+    text-align: left;
+    font-size:45px;
+    float: left;
     color: white;
+    padding: 10px;
 }
 .mockup {
-    position: relative;
-    left: 800px;
-    bottom: 195px;
+    padding-left: 1100px;
+    
+    
+    width: 300px;
+}
+.list-text{
+    width: 66.6%;
+    padding-top: 60px;
+    padding-right: 0;
+    font-size:30px;
+    color:white;
+
 }
