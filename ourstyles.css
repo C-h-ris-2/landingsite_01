@@ -57,6 +57,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color:white;
+    width: 100%;
+    height: auto;
 }
 /* curr logo */
 .curr-pic {
@@ -111,17 +113,10 @@ body{
     padding-left: 10%;
     align-self: left;
 }
-.container2 {
-    padding-bottom: 2%;
-    padding-top: 2%;
-    background-color:#272727;
-    display: flex;
-    padding-left: 10%;
-    align-self: left;
-}
 .subheading {
+    font: bold;
     text-align: left;
-    font-size:45px;
+    font-size:60px;
     float: left;
     color: white;
     padding: 10px;
