@@ -119,5 +119,14 @@
             Copyright &copy; RevMixer 2023
         </section>
     </footer>
+    <script>
+        //Javascript code: allows us to expand/close the meny based on click (or 'toggle')
+        const toggleButton = document.getElementById('toggle-button');
+        const navigationList = document.getElementById('navigList');
+        //Event listener activates upon click (just like Unity!)
+        toggleButton.addEventListener('click', ()=>{
+            navigationList.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
