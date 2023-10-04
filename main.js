@@ -1,8 +1,10 @@
+// activating opening and closing of the FAQ questions
 const faqHeaders = document.querySelectorAll(".faqs-cont .faq-header");
 
 faqHeaders.forEach((header,i) => {
     header.addEventListener("click", () => {
         header.nextElementSibling.classList.toggle("active");
+        // Essentially, when click open and close.
 
         const open = header.querySelector(".op");
         const close = header.querySelector(".cl");

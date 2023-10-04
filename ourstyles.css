@@ -46,6 +46,7 @@
     margin-bottom: 4px;
 }
 
+
 .genpricing{
     background-color: white;
 }
@@ -140,6 +141,7 @@ body{
     font-size: 80px;
     color: white;
 }
+
 .start-box-model{
     background-color: black;
     background-image: url("./assets/banner_comp.png");
@@ -153,6 +155,7 @@ body{
     border-bottom:#555;
     border-style: double;
 }
+/* hero imaging for pricing */
 .img-pricing{
     background-image: url("./assets/PricingBanner.png");
     background-repeat: no-repeat;
@@ -170,6 +173,7 @@ body{
     color: white;
 }
 
+/* hero imaging for faq */
 .img-faq{
     background-image: url("./assets/FAQBanner.png");
     background-repeat: no-repeat;
@@ -239,6 +243,7 @@ body{
     font-weight: bold;
 }
 
+/* mockups */
 .mockup {
     padding-top: 50px;
     width: 500px;
@@ -273,6 +278,8 @@ body{
     margin-left: 150px;
     font-weight: bold;
 }
+
+/* testimonials */
 .reviewboxes{
     margin: 15px;
 }
@@ -343,10 +350,7 @@ body{
     color: white;
     font-weight: bold;
 }
-.footer {
-    text-align: center;
-}
-
+/* FAQS formatting */
 .faqs-cont {
     max-width: 700px;
     margin: 0 auto;
@@ -406,6 +410,7 @@ body{
     max-height: 600px;
 
 }
+/* future plans formatting */
 .futureplansbckgrnd {
     background-image: url("./assets/fpbgimg.png");
     background-repeat: no-repeat;
@@ -445,7 +450,7 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+/* Banner in case they have more questions */
 .more-questions{
     text-align: center;
     padding: 40px;
@@ -453,7 +458,7 @@ body{
     font-size: 18px;
     color: white;
 }
-
+/* FOOTER STYLING */
 .ft{
     display: flex;
     flex-direction: column;
@@ -545,6 +550,7 @@ body{
     color:white;
 }
 
+/* cases where usual set up doesn't work (e.g. mobile) */
 @media all and (max-width: 480px) {
     .top-nav{
         flex-direction: column;
