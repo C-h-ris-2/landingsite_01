@@ -170,6 +170,23 @@ body{
     color: white;
 }
 
+.img-faq{
+    background-image: url("./assets/FAQBanner.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: relative;
+    padding:200px;
+    align-items: center;
+    text-align: center;
+    position:relative;
+}
+
+.mh-faq{
+    text-align: left ;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
 .hero-text{
     color: white;
     text-align: center;
@@ -326,6 +343,65 @@ body{
 }
 .footer {
     text-align: center;
+}
+
+.faqs-cont {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.faqs-cont .q-cont {
+    box-shadow: 0 4px 8px -3px rgb(0,0,0,0.3);
+}
+
+.faqs-cont .faq-header {
+    display: flex;
+    background: #000000;
+    color: white;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    /* border-radius: 25px; */
+}
+
+.faqs-cont .faq-header .op,
+.faqs-cont .faq-header .cl {
+    position: absolute;
+    right: 0;
+    padding: 0 32px;
+    font-size: 22px;
+    font-weight: bold;
+    transform: translateY(-8px);
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.faqs-cont .faq-header .op.active,
+.faqs-cont .faq-header .cl.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.faqs-cont .faq-header h3{
+    font-size: 20px;
+    padding : 0 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.faqs-cont .cont{
+    padding : 0 32px;
+    background-color:#fdfffc;
+    line-height: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+.faqs-cont .cont.active {
+    max-height: 600px;
 
 }
 .futureplansbckgrnd {
@@ -363,6 +439,18 @@ body{
 }
 #embed-iframe{
     margin-top: 100px;
+
+.faqs-cont .p1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.more-questions{
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(0, 102, 102);
+    font-size: 18px;
+    color: white;
 }
 
 @media all and (max-width: 480px) {
