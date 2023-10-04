@@ -10,13 +10,100 @@
         <title>Future plans!</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="ourstyles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="" async defer></script>
+        <!-- Navigation bar! -->
+        <nav class="top-nav">
+            <div class="curr-pic">
+                <a href="#">
+                    <!-- Logo... may be replaced by words if necessary -->
+                    <img class="primary-icon" src="./assets/RevMixer_logo_t.png">
+                </a>
+            </div>
+            <ul class="nav-list" id="navigList">
+                <!-- List of items within meny -->
+                <li class="list-item"><a href="index.html">About Us</a></li>
+                <li class="list-item"><a href="pricing.html">Pricing</a></li>
+                <li class="list-item"><a href="faq.html">FAQ</a></li>
+                <li class="list-item"><a href="futureplans.html">Future Plan</a></li>
+            </ul>
+            <div class="menu" id="toggle-button">
+                <!-- For mobile version... -->
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+        <div class="futureplansbckgrnd" id="futureplansbckgrnd">
+            <h1 class="mh-pricing">
+                Future Plans
+            </h1>
+        </div>
+        <section class="container2">
+            <div class="artistsubscribebox">
+            <header class="futureheading" id="futureheading" >Subscribe to your favorite artists</header>
+            <p class="futureplantext">
+                Get access to new songs, art and albums before its release
+                <br><br>
+                 Watch artist interviews
+                <br><br>
+                 Be up to date with artists' music journeys
+            </p>
+            </div>
+            <img class="mockup1"src="./assets/KENPHONE.png">
+        </section>
+        <section class="container2">
+            <img class="compmockup" src="./assets/computermockup.png">
+            <div >
+                <header class="futureheading" id="futureheading" >Social Network</header>
+                <p class="futureplantext">
+                    Connect and add your friends
+                    <br><br>
+                    Message your friends and talk about your favorite tracks
+                    <br><br>
+                    Find people with similar taste in tunes
+                    
+                </p>
+            </div>
+        </section>
+        <section class="container2">
+            <div class="artistsubscribebox">
+            <header class="futureheading" id="futureheading" >AI-Personalized playlists</header>
+            <p class="futureplantext">
+                Add in keywords to describe how you're feeling
+                <br><br>
+                 Utilizes the time of the day
+                <br><br>
+                 Add any other Artists you want in the playlist
+                 <br><br>
+                 You get a personalized playlist made for whatever situation you're in
+            </p>
+            </div>
+            <div id="embed-iframe" style="float:left;"></div>
+        </section>
+        <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+        <script type="text/Javascript">window.onSpotifyIframeApiReady = (IFrameAPI) => {
+            const element = document.getElementById('embed-iframe');
+            element.style.float = "left";
+            const options = {
+              width: '22%',
+              height: '360',
+              uri: 'https://open.spotify.com/playlist/37i9dQZF1DXbYM3nMM0oPk'
+            };
+            const callback = (EmbedController) => {
+              document.querySelectorAll('.episode').forEach(
+                episode => {
+                  episode.addEventListener('click', () => {
+                    EmbedController.loadUri(episode.dataset.spotifyId)
+                  });
+                })
+            };
+            IFrameAPI.createController(element, options, callback);
+          };</script>
     </body>
 </html>
