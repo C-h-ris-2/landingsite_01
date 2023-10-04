@@ -56,6 +56,7 @@
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .price-opt-b > div{
@@ -121,7 +122,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color:white;
     width: 100%;
     margin: auto;
@@ -140,6 +141,7 @@ body{
     color: white;
 }
 .start-box-model{
+    background-color: black;
     background-image: url("./assets/banner_comp.png");
     background-repeat: no-repeat;
     background-size:cover;
@@ -148,6 +150,8 @@ body{
     align-items: center;
     text-align: center;
     position:relative;
+    border-bottom:#555;
+    border-style: double;
 }
 .img-pricing{
     background-image: url("./assets/PricingBanner.png");
@@ -208,7 +212,21 @@ body{
     background-color:black;
     display: flex;
     padding-left: 10%;
+    border-bottom: #666;
+    border-bottom-style:double;
+}
+.container2 {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color:white;
+    display: flex;
+    padding-left: 10%;
     align-self: left;
+    border-bottom: #666;
+    border-bottom-style:double;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 .subheading {
     font: bold;
@@ -220,21 +238,27 @@ body{
     padding-bottom: 20px;
     font-weight: bold;
 }
-.aboutcontainer {
-    float: left;
-    width: 1100px;
-    height: 500px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: white;
-    background-color:#272727
-}
+
 .mockup {
     padding-top: 50px;
     width: 500px;
     margin-left: 30px;
     float: left;
     padding-right: 180px;
+    
+}
+.mockup1 {
+    padding-top: 50px;
+    width: 200px;
+    height:auto;
+    float: left;
+
+}
+.compmockup {
+    padding-top: 50px;
+    width: 600px;
+    height:auto;
+    float: right;
 }
 .list-text{
     padding-top: 10px;
@@ -246,8 +270,11 @@ body{
 .thirdheading {
     font-size: 375%;
     color: white;
-    text-align: center;
+    margin-left: 150px;
     font-weight: bold;
+}
+.reviewboxes{
+    margin: 15px;
 }
 .reviewcontains1 {
     border-radius: 10px;
@@ -285,6 +312,18 @@ body{
     float: left;
     background-color: black;
 }
+.reviewcontains4 {
+    border-radius: 10px;
+    height: 550px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 15px;
+    margin-top: 80px;
+    width: 500px;
+    border-color: rgb(202, 240, 67);
+    float: left;
+    background-color: black;
+}
 .pfps {
     width: 300px;
     margin: 40px;
@@ -294,7 +333,7 @@ body{
 .reviewtext {
     text-align:center;
     margin: 40px;
-
+    font-style:italic;
     font-size: 25px;
     color: white;
 }
@@ -367,7 +406,41 @@ body{
     max-height: 600px;
 
 }
-
+.futureplansbckgrnd {
+    background-image: url("./assets/fpbgimg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+    padding:250px;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    border-bottom-style: double;
+    border-bottom-color:#555;
+}
+.artistsubscribebox{
+    width: 700px;
+}
+.futureheading {
+    font: bold;
+    text-align: left;
+    font-size:50px;
+    float: left;
+    color: black;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.futureplantext {
+    padding-top: 10px;
+    padding-right: 0;
+    font-size:22px;
+    color:black;
+    float: left;
+}
+.embed-iframe{
+    margin-top:70px;
+}
 .faqs-cont .p1{
     padding-top: 30px;
     padding-bottom: 30px;
