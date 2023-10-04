@@ -487,7 +487,13 @@ body{
     }
     .main-heading{
         font-size: 60px;
-        text-align: center;
+        text-align: left;
+        width: 250px;
+
+    }
+    .hero-text{
+        width: 300px;
+        text-align: left;
     }
     
 }
