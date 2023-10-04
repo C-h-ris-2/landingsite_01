@@ -256,9 +256,9 @@ body{
 }
 .compmockup {
     padding-top: 50px;
-    width: 600px;
+    width: 500px;
     height:auto;
-    float: right;
+    float: left;
 }
 .list-text{
     padding-top: 10px;
@@ -419,7 +419,7 @@ body{
     border-bottom-color:#555;
 }
 .artistsubscribebox{
-    width: 700px;
+    width: 550px;
 }
 .futureheading {
     font: bold;
