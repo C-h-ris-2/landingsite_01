@@ -84,8 +84,26 @@
                  You get a personalized playlist made for whatever situation you're in
             </p>
             </div>
-            <img class="mockup1"src="./assets/personalizedmusic.png" style="width: 300px; margin-right: 200px; margin-top: 50px;">
+            <div id="embed-iframe" style="float:left;"></div>
         </section>
         <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+        <script type="text/Javascript">window.onSpotifyIframeApiReady = (IFrameAPI) => {
+            const element = document.getElementById('embed-iframe');
+            element.style.float = "left";
+            const options = {
+              width: '22%',
+              height: '360',
+              uri: 'https://open.spotify.com/playlist/37i9dQZF1DXbYM3nMM0oPk'
+            };
+            const callback = (EmbedController) => {
+              document.querySelectorAll('.episode').forEach(
+                episode => {
+                  episode.addEventListener('click', () => {
+                    EmbedController.loadUri(episode.dataset.spotifyId)
+                  });
+                })
+            };
+            IFrameAPI.createController(element, options, callback);
+          };</script>
     </body>
 </html>
